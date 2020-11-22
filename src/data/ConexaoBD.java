@@ -3,7 +3,7 @@ import java.sql.*;
 public class ConexaoBD {
     public Connection connection = null;
     private final String DRIVER = "com.mysql.jdbc.Driver";
-    private final String DBNAME = "webtestantigo";
+    private final String DBNAME = "projetoescola";
     private final String URL = "jdbc:mysql://localhost:3306/" + DBNAME;
     private final String LOGIN = "root";
     private final String SENHA = "123456";

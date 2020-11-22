@@ -15,17 +15,21 @@ public class Alunos {
         this.login_alunos = login_alunos;
         this.senha_alunos = senha_alunos;
     }
+
+    Alunos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public String getCOD_ALUNOS() {
         return cod_alunos;
     }
-    public void setCOD_ALUNOS(String codigo) {
+    public void setCOD_ALUNOS(String cod_alunos) {
         this.cod_alunos = cod_alunos;
     }
     public String getNOME_ALUNOS() {
         return nome_alunos;
     }
-    public void setNOME_ALUNOS(String dataCompra) {
+    public void setNOME_ALUNOS(String nome_alunos) {
         this.nome_alunos = nome_alunos;
     }
 
@@ -91,6 +95,54 @@ public class Alunos {
 
     public String getSenha_alunos() {
         return senha_alunos;
+    }
+
+    void setSERIE_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setMATRICULA_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setTURNO_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setEMAIL_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setLOGIN_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setSENHA_ALUNOS(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getSERIE_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getMATRICULA_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getTURNO_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getEMAIL_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getLOGIN_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getSENHA_ALUNOS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 

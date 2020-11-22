@@ -3,7 +3,7 @@ package data;
 import java.sql.*;
 
 public class AlunosDAO {
-    public TB_ALUNOS aluno;
+    public Alunos aluno;
     public ConexaoBD bd;
     private PreparedStatement statement;
     private ResultSet resultSet;
@@ -14,20 +14,23 @@ public class AlunosDAO {
     
     public AlunosDAO() {
         bd = new ConexaoBD();
-        aluno = new TB_ALUNOS();
+        aluno = new Alunos();
     }
     public boolean localizar() {
-        sql = "select * from tb_alunos where codigo = ?";
+        sql = "select * from tb_alunos where COD_ALUNOS = ?";
         try {
             statement = bd.connection.prepareStatement(sql);
-            statement.setString(1, aluno.getCodigo());
+            statement.setString(1, aluno.getCOD_ALUNOS());
             resultSet = statement.executeQuery();
             resultSet.next();
-            aluno.setCodigo(resultSet.getString(1));
-            aluno.setTitulo(resultSet.getString(2));
-            aluno.setgenero(resultSet.getString(3));
-            aluno.setProdutora(resultSet.getString(4));
-            aluno.setDataCompra("" + resultSet.getDate(5));
+            aluno.setCOD_ALUNOS(resultSet.getString(1));
+            aluno.setNOME_ALUNOS(resultSet.getString(2));
+            aluno.setSERIE_ALUNOS(resultSet.getString(3));
+            aluno.setMATRICULA_ALUNOS(resultSet.getString(4));
+            aluno.setTURNO_ALUNOS(resultSet.getString(5));
+            aluno.setEMAIL_ALUNOS(resultSet.getString(6));
+            aluno.setLOGIN_ALUNOS(resultSet.getString(7));
+            aluno.setSENHA_ALUNOS("" + resultSet.getString(8));
             return true;
         }catch (SQLException erro) {
             return false;
@@ -37,7 +40,7 @@ public class AlunosDAO {
         men = "Operacão realizada com sucesso!";
         try {
             if(operacao == INCLUSAO) {
-                sql = "insert into tb_alunos values (?, ?, ?, ?, ?)";
+                sql = "insert into tb_alunos values (?, ?, ?, ?, ?, ?, ?, ?)";
                 statement = bd.connection.prepareStatement(sql);
                 statement.setString(1, aluno.getCOD_ALUNOS());
                 statement.setString(2, aluno.getNOME_ALUNOS());
@@ -52,7 +55,7 @@ public class AlunosDAO {
                 
             } else if (operacao == ALTERACAO) {
                 sql = "update tb_alunos set NOME_ALUNOS = ?" +  "SERIE_ALUNOS = ?" + "MATRICULA_ALUNOS = ?, TURNO_ALUNOS = ?"
-                        + "EMAIL_ALUNOS = ?, LOGIN_ALUNOS = ?, LOGIN_ALUNOS = ?  where codigo = ?";
+                        + "EMAIL_ALUNOS = ?, LOGIN_ALUNOS = ?, SENHA_ALUNOS = ?  where COD_ALUNOS = ?";
                 statement =  bd.connection.prepareStatement(sql);
                 statement.setString(8, aluno.getCOD_ALUNOS());
                 statement.setString(1, aluno.getNOME_ALUNOS());
@@ -66,9 +69,9 @@ public class AlunosDAO {
                 
                 
             } else if (operacao == EXCLUSAO) {
-                sql = "delete from filmes where codigo = ?";
+                sql = "delete from tb_alunos where COD_ALUNOS = ?";
                 statement = bd.connection.prepareStatement(sql);
-                statement.setString(1, aluno.getCodigo());
+                statement.setString(1, aluno.getCOD_ALUNOS());
             }
             if(statement.executeUpdate() == 0) {
                 men = "Falha na operacao!";

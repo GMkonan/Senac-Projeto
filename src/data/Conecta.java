@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 public class Conecta {
     public static void main(String[] args) {
        final String DRIVER = "com.mysql.jdbc.Driver";
-       final String URL = "jdbc:mysql://localhost:3306/webtestantigo";
+       final String URL = "jdbc:mysql://localhost:3306/projetoescola";
        try{
            Class.forName(DRIVER);
            Connection connection = DriverManager.getConnection(URL, "root", "123456");
