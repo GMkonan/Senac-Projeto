@@ -21,7 +21,7 @@ public class OpcoesDAO {
         opcao = new Opcoes();
     }
     public boolean localizar() {
-        sql = "select * from filmes where codigo = ?";
+        sql = "select * from tb_opcoes where COD_OPCOES = ?";
         try {
             statement = bd.connection.prepareStatement(sql);
             statement.setString(1, opcao.COD_OPCOES());

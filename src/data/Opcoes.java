@@ -13,6 +13,10 @@ public class Opcoes {
       
     private String COD_OPCOES, RESPOSTA_OPCOES;
 
+    Opcoes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getCOD_OPCOES() {
         return COD_OPCOES;
     }
