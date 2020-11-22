@@ -9,7 +9,7 @@
 - [x] terminar objetos;
   - [ ] consertar objetos, professoresDAO e opcoes DAO;
 - [ ] terminar cardlayouts para todas as paginas (cadastro e login);
-- [ ] puxar dados do banco de dados separadamente para cada pagina;
+- [ ] puxar dados do banco de dados separadamente para cada pagina ;
 - [ ] adicionar ultimos detalhes das telas.
 
 ## Contribuidores
