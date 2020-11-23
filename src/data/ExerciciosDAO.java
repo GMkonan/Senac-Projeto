@@ -49,7 +49,7 @@ public class ExerciciosDAO {
             } else if (operacao == ALTERACAO) {
                 sql = "update tb_exercicios set TITULO_EXERCICIOS = ?, DISCIPLINA_EXERCICIOS = ?" + "NOTAS_EXERCICIOS = ?" + "where COD_EXERCICIOS = ?";
                 statement =  bd.connection.prepareStatement(sql);
-                statement.setString(8, exercicio.getCOD_EXERCICIOS());
+                statement.setString(4, exercicio.getCOD_EXERCICIOS());
                 statement.setString(1, exercicio.getTITULO_EXERCICIOS());
                 statement.setString(2, exercicio.getDISCIPLINA_EXERCICIOS());
                 statement.setString(3, exercicio.getNOTAS_EXERCICIOS());             
