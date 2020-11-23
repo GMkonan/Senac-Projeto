@@ -56,7 +56,7 @@ public class QuestoesDAO {
                 statement.setString(3, questao.getPESO_QUESTOES());
                
             } else if (operacao == EXCLUSAO) {
-                sql = "delete from filmes where codigo = ?";
+                sql = "delete from tb_questoes where COD_QUESTOES = ?";
                 statement = bd.connection.prepareStatement(sql);
                 statement.setString(1, questao.getCOD_QUESTOES());                
             }
