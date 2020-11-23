@@ -27,35 +27,75 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        bLogar = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel1.setLayout(null);
+        jPanel2.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 153));
-        jLabel1.setText("Login");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(340, 30, 170, 60);
+        jButton4.setBackground(new java.awt.Color(153, 0, 153));
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 153));
+        jButton4.setText("Cadastro Professor");
+        jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton4);
+        jButton4.setBounds(40, 430, 150, 50);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 810, 120);
+        jButton3.setBackground(new java.awt.Color(153, 0, 153));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 153));
+        jButton3.setText("Cadastro Aluno");
+        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3);
+        jButton3.setBounds(370, 430, 150, 50);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Usuario");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(290, 230, 60, 20);
+        bLogar.setBackground(new java.awt.Color(153, 0, 153));
+        bLogar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bLogar.setForeground(new java.awt.Color(255, 255, 153));
+        bLogar.setText("Entrar");
+        bLogar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        bLogar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bLogar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bLogarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(bLogar);
+        bLogar.setBounds(230, 430, 100, 50);
+
+        jPasswordField1.setText("SENHAlegal");
+        jPasswordField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
+        jPanel2.add(jPasswordField1);
+        jPasswordField1.setBounds(200, 300, 180, 40);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("Senha");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(200, 280, 50, 20);
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField1.setText("UAU4324254");
@@ -65,27 +105,28 @@ public class Login extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(290, 250, 180, 40);
+        jPanel2.add(jTextField1);
+        jTextField1.setBounds(200, 230, 180, 40);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Senha");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(290, 300, 50, 20);
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setText("Usuario");
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(200, 210, 60, 20);
 
-        jPasswordField1.setText("SENHAlegal");
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(290, 320, 180, 40);
+        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel1.setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(153, 0, 153));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 153));
-        jButton1.setText("Entrar");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(jButton1);
-        jButton1.setBounds(330, 440, 100, 50);
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 153));
+        jLabel1.setText("Login");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(240, 30, 170, 60);
+
+        jPanel2.add(jPanel1);
+        jPanel1.setBounds(0, 0, 600, 120);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 600, 500);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -93,6 +134,21 @@ public class Login extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void bLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogarActionPerformed
+        // Checar com um if se a senha encoded eh == a senha enconded no banco de dados
+        //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
+        //passar de painel
+        
+    }//GEN-LAST:event_bLogarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,11 +186,14 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton bLogar;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
