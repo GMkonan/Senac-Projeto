@@ -71,7 +71,7 @@ public class ProfessoresDAO {
                 statement.setString(15, professor.getSENHA_PROFESSOR());
                 statement.setString(16, professor.getEMAIL_PROFESSOR());
             } else if (operacao == ALTERACAO) {
-                sql = "update filmes set NOME_PROFESSOR = ?, DISCIPLINA_PROFESSOR = ?" + "IDADE_PROFESSOR = ?" + "TELEFONE_PROFESSOR = ?" + 
+                sql = "update tb_professores set NOME_PROFESSOR = ?, DISCIPLINA_PROFESSOR = ?" + "IDADE_PROFESSOR = ?" + "TELEFONE_PROFESSOR = ?" + 
                         "ENDERECO_PROFESSOR = ?, UF_PROFESSOR = ?, CIDADE_PROFESSOR = ?, CPF_PROFESSOR = ?, RG_PROFESSOR = ?, SEXO_PROFESSOR = ?, BAIRRO_PROFESSOR = ?, TURNO_PROFESSOR = ?, LOGIN_PROFESSOR = ?, SENHA_PROFESSOR = ?, EMAIL_PROFESSOR = ?" + "where codigo = ?";
                 statement = bd.connection.prepareStatement(sql);
                 statement.setString(16, professor.getCOD_PROFESSOR());
