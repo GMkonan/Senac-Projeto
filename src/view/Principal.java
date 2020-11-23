@@ -50,7 +50,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextQuestao_Exercicios1 = new javax.swing.JTextField();
-        bVoltarExercicios = new javax.swing.JButton();
+        bVoltarExerciciosAluno = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -113,7 +113,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jTextQuestao_Exercicios2 = new javax.swing.JTextField();
-        bVoltarExercicios1 = new javax.swing.JButton();
+        bVoltarExerciciosProf = new javax.swing.JButton();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
@@ -302,15 +302,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        bVoltarExercicios.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarExercicios.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarExercicios.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarExercicios.setText("Voltar");
-        bVoltarExercicios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarExercicios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarExercicios.addActionListener(new java.awt.event.ActionListener() {
+        bVoltarExerciciosAluno.setBackground(new java.awt.Color(153, 0, 153));
+        bVoltarExerciciosAluno.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarExerciciosAluno.setForeground(new java.awt.Color(255, 255, 153));
+        bVoltarExerciciosAluno.setText("Voltar");
+        bVoltarExerciciosAluno.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        bVoltarExerciciosAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarExerciciosAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarExerciciosActionPerformed(evt);
+                bVoltarExerciciosAlunoActionPerformed(evt);
             }
         });
 
@@ -322,7 +322,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bVoltarExercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bVoltarExerciciosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
@@ -338,11 +338,11 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(bVoltarExercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bVoltarExerciciosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
         );
 
-        pAluno.add(jPanel3, "cExercicios");
+        pAluno.add(jPanel3, "cExerciciosAluno");
 
         jPanel6.setBackground(new java.awt.Color(153, 0, 153));
         jPanel6.setLayout(null);
@@ -792,15 +792,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        bVoltarExercicios1.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarExercicios1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarExercicios1.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarExercicios1.setText("Voltar");
-        bVoltarExercicios1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarExercicios1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarExercicios1.addActionListener(new java.awt.event.ActionListener() {
+        bVoltarExerciciosProf.setBackground(new java.awt.Color(153, 0, 153));
+        bVoltarExerciciosProf.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarExerciciosProf.setForeground(new java.awt.Color(255, 255, 153));
+        bVoltarExerciciosProf.setText("Voltar");
+        bVoltarExerciciosProf.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        bVoltarExerciciosProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarExerciciosProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarExercicios1ActionPerformed(evt);
+                bVoltarExerciciosProfActionPerformed(evt);
             }
         });
 
@@ -819,8 +819,8 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(jLabel29))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(bVoltarExercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(89, Short.MAX_VALUE))
+                        .addComponent(bVoltarExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -831,11 +831,11 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextQuestao_Exercicios2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(bVoltarExercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bVoltarExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
         );
 
-        pAluno.add(jPanel15, "cExercicios");
+        pAluno.add(jPanel15, "cExerciciosProf");
 
         jPanel17.setLayout(null);
 
@@ -1044,7 +1044,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void bExerciciosAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosAlunoActionPerformed
         CardLayout card = (CardLayout)pAluno.getLayout();
-        card.show(pAluno, "cExercicios");
+        card.show(pAluno, "cExerciciosAluno");
     }//GEN-LAST:event_bExerciciosAlunoActionPerformed
 
     private void bNotasAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotasAlunoActionPerformed
@@ -1069,10 +1069,10 @@ public class Principal extends javax.swing.JFrame {
         card.show(pAluno, "cAluno");
     }//GEN-LAST:event_bVoltarNotaActionPerformed
 
-    private void bVoltarExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosActionPerformed
+    private void bVoltarExerciciosAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosAlunoActionPerformed
         CardLayout card = (CardLayout)pAluno.getLayout();
         card.show(pAluno, "cAluno");
-    }//GEN-LAST:event_bVoltarExerciciosActionPerformed
+    }//GEN-LAST:event_bVoltarExerciciosAlunoActionPerformed
 
     private void bCadastroProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCadastroProfActionPerformed
         CardLayout card = (CardLayout)pAluno.getLayout();
@@ -1171,7 +1171,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void bExerciciosProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosProfActionPerformed
         CardLayout card = (CardLayout)pAluno.getLayout();
-        card.show(pAluno, "cExercicios");
+        card.show(pAluno, "cExerciciosProf");
     }//GEN-LAST:event_bExerciciosProfActionPerformed
 
     private void bNotaProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotaProfActionPerformed
@@ -1188,10 +1188,10 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextQuestao_Exercicios2ActionPerformed
 
-    private void bVoltarExercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExercicios1ActionPerformed
+    private void bVoltarExerciciosProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosProfActionPerformed
         CardLayout card = (CardLayout)pAluno.getLayout();
         card.show(pAluno, "cProfessor");
-    }//GEN-LAST:event_bVoltarExercicios1ActionPerformed
+    }//GEN-LAST:event_bVoltarExerciciosProfActionPerformed
 
     private void jTextNome_ExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_ExerciciosActionPerformed
         // TODO add your handling code here:
@@ -1296,8 +1296,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton bVoltarCadastroProf;
     private javax.swing.JButton bVoltarCriarExercicios;
     private javax.swing.JButton bVoltarCriarExercicios1;
-    private javax.swing.JButton bVoltarExercicios;
-    private javax.swing.JButton bVoltarExercicios1;
+    private javax.swing.JButton bVoltarExerciciosAluno;
+    private javax.swing.JButton bVoltarExerciciosProf;
     private javax.swing.JButton bVoltarNota;
     private javax.swing.JButton bVoltarNotaProf;
     private javax.swing.JButton jButton1;

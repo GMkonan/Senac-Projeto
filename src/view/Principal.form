@@ -359,7 +359,7 @@
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="cExercicios"/>
+              <CardConstraints cardName="cExerciciosAluno"/>
             </Constraint>
           </Constraints>
 
@@ -370,7 +370,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="bVoltarExercicios" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="bVoltarExerciciosAluno" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jTextQuestao_Exercicios1" alignment="0" min="-2" pref="485" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -390,7 +390,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextQuestao_Exercicios1" min="-2" pref="181" max="-2" attributes="0"/>
                       <EmptySpace pref="39" max="32767" attributes="0"/>
-                      <Component id="bVoltarExercicios" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="bVoltarExerciciosAluno" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -436,7 +436,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextQuestao_Exercicios1ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="bVoltarExercicios">
+            <Component class="javax.swing.JButton" name="bVoltarExerciciosAluno">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="0" red="99" type="rgb"/>
@@ -461,7 +461,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bVoltarExerciciosActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bVoltarExerciciosAlunoActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1326,7 +1326,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="cExercicios"/>
+              <CardConstraints cardName="cExerciciosProf"/>
             </Constraint>
           </Constraints>
 
@@ -1346,10 +1346,10 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                              <Component id="bVoltarExercicios1" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="bVoltarExerciciosProf" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="89" max="32767" attributes="0"/>
+                      <EmptySpace pref="101" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1362,7 +1362,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextQuestao_Exercicios2" min="-2" pref="181" max="-2" attributes="0"/>
                       <EmptySpace pref="53" max="32767" attributes="0"/>
-                      <Component id="bVoltarExercicios1" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="bVoltarExerciciosProf" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1408,7 +1408,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextQuestao_Exercicios2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="bVoltarExercicios1">
+            <Component class="javax.swing.JButton" name="bVoltarExerciciosProf">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1433,7 +1433,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bVoltarExercicios1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bVoltarExerciciosProfActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
