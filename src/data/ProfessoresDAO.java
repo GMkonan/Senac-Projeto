@@ -21,7 +21,7 @@ public class ProfessoresDAO {
         professor = new Professores();
     }
     public boolean localizar() {
-        sql = "select * from tb_professores where COD_PROFESSOR = ?";
+        sql = "select * from tb_professores where COD_PROFESSOR = ?"; //provavelmente mudar isso pra login
         try {
             statement = bd.connection.prepareStatement(sql);
             statement.setString(1, professor.getCOD_PROFESSOR());

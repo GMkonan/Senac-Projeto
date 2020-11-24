@@ -5,21 +5,6 @@ package data;
 public class Alunos {
     private String cod_alunos, nome_alunos, serie_alunos, matricula_alunos, turno_alunos, email_alunos, login_alunos, senha_alunos;
     
-    public Alunos(String cod_alunos, String nome_alunos, String serie_alunos, String matricula_alunos, String turno_alunos, String email_alunos, String login_alunos, String senha_alunos) {
-        this.cod_alunos = cod_alunos;
-        this.nome_alunos = nome_alunos;
-        this.serie_alunos = serie_alunos;
-        this.matricula_alunos = matricula_alunos;
-        this.turno_alunos = turno_alunos;
-        this.email_alunos = email_alunos;
-        this.login_alunos = login_alunos;
-        this.senha_alunos = senha_alunos;
-    }
-
-    Alunos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     public String getCOD_ALUNOS() {
         return cod_alunos;
     }
