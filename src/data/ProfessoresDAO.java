@@ -21,10 +21,10 @@ public class ProfessoresDAO {
         professor = new Professores();
     }
     public boolean localizar() {
-        sql = "select * from tb_professores where COD_PROFESSOR = ?"; //provavelmente mudar isso pra login
+        sql = "select * from tb_professores where LOGIN_PROFESSOR = ?"; //provavelmente mudar isso pra login
         try {
             statement = bd.connection.prepareStatement(sql);
-            statement.setString(1, professor.getCOD_PROFESSOR());
+            statement.setString(1, professor.getLOGIN_PROFESSOR());
             resultSet = statement.executeQuery();
             resultSet.next();
             professor.setCOD_PROFESSOR(resultSet.getString(1));

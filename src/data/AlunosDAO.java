@@ -17,10 +17,10 @@ public class AlunosDAO {
         aluno = new Alunos();
     }
     public boolean localizar() {
-        sql = "select * from tb_alunos where COD_ALUNOS = ?"; //provavel ter q mudar para algo q n seja COD_ALUNOS (talvez login?)
+        sql = "select * from tb_alunos where LOGIN_ALUNOS = ?"; //provavel ter q mudar para algo q n seja COD_ALUNOS (talvez login?)
         try {
             statement = bd.connection.prepareStatement(sql);
-            statement.setString(1, aluno.getCOD_ALUNOS());
+            statement.setString(1, aluno.getLOGIN_ALUNOS());
             resultSet = statement.executeQuery();
             resultSet.next();
             aluno.setCOD_ALUNOS(resultSet.getString(1));
