@@ -5,19 +5,31 @@
  */
 package view;
 
+//imports
 import java.awt.*;
+import data.AlunosDAO;
+import data.Alunos;
+import data.ProfessoresDAO;
+import data.Professores;
+
 
 /**
  *
  * @author sala18a
  */
 public class Principal extends javax.swing.JFrame {
-
+    
+    //declara as variaveis
+    private AlunosDAO alunos;
+    private ProfessoresDAO professores;
     /**
      * Creates new form TelaAlunos
      */
     public Principal() {
         initComponents();
+        //inicializa essas variaveis como os objetos q elas sao
+        alunos = new AlunosDAO();
+        professores = new ProfessoresDAO();
     }
 
     /**
@@ -1088,10 +1100,22 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_bCadastroAlunoActionPerformed
 
     private void bLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogarActionPerformed
-        // Checar com um if se a senha encoded eh == a senha enconded no banco de dados
+        
+        alunos.aluno.setLogin_alunos("usuarioDoAluno (pegar da caixa de texto login)");
+        alunos.localizar();
+        
+        professores.professor.setLOGIN_PROFESSOR("usuarioDoProf (pegar da caixa de texto login)");
+        professores.localizar();
+        //apos localizado,pegar a senha com o get
         //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
-        //passar de painel
-        //botar isso dentro de um if
+        
+        if("CaixaDeTextoDaSenha" == alunos.aluno.getSenha_alunos()){
+            //dentro a parte de card layouts para a tela aluno
+        }
+        else if("CaixaDeTextoDaSenha" == professores.professor.getSENHA_PROFESSOR()){
+            //card layout do professor
+        }
+        
         CardLayout card = (CardLayout)pMenu.getLayout();
         card.show(pMenu, "cAluno");
         
