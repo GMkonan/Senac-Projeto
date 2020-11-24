@@ -5,19 +5,28 @@
  */
 package view;
 
+import data.AlunosDAO;
+import data.ProfessoresDAO;
 import java.awt.*;
-
+import java.util.Base64;
 /**
  *
  * @author sala18a
  */
 public class Principal extends javax.swing.JFrame {
-
+    
+        //declara as variaveis
+    private AlunosDAO alunos;
+    private ProfessoresDAO professores;
+    
     /**
      * Creates new form TelaAlunos
      */
     public Principal() {
         initComponents();
+        //inicializa essas variaveis como os objetos q elas sao
+        alunos = new AlunosDAO();
+        professores = new ProfessoresDAO();
     }
 
     /**
@@ -999,13 +1008,28 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_bCadastroAlunoActionPerformed
 
     private void bLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogarActionPerformed
-        // Checar com um if se a senha encoded eh == a senha enconded no banco de dados
-        //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
-        //passar de painel
-        //botar isso dentro de um if
-        CardLayout card = (CardLayout)pMenu.getLayout();
-        card.show(pMenu, "cAluno");
         
+        alunos.aluno.setLogin_alunos(jTextField3.getText());
+        alunos.localizar();
+        
+        professores.professor.setLOGIN_PROFESSOR("usuarioDoProf (pegar da caixa de texto login)");
+        professores.localizar();
+        //apos localizado,pegar a senha com o get
+        //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
+        String encodeBytes = Base64.getEncoder().encodeToString((jPasswordField1.getText()).getBytes());
+        if(encodeBytes == alunos.aluno.getSenha_alunos()){
+            //dentro a parte de card layouts para a tela aluno
+            CardLayout card = (CardLayout)pMenu.getLayout();
+            card.show(pMenu, "cAluno");
+
+        }
+        else if(encodeBytes == professores.professor.getSENHA_PROFESSOR()){
+            //card layout do professor
+            CardLayout card = (CardLayout)pAluno.getLayout();
+            card.show(pAluno, "cProfessor");
+        }
+        
+     
         
         //Entrar no do professor caso login seja para professor
         //CardLayout card = (CardLayout)pAluno.getLayout();
