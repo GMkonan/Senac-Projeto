@@ -600,20 +600,21 @@ public class Principal extends javax.swing.JFrame {
         jPanel11.add(jTextEmail_Professor);
         jTextEmail_Professor.setBounds(80, 350, 250, 24);
 
-        jPanel12.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel12.setBackground(new java.awt.Color(0, 153, 0));
         jPanel12.setToolTipText("Teste");
         jPanel12.setLayout(null);
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 153));
-        jLabel25.setText("Cadastro Professor");
+        jLabel25.setBackground(new java.awt.Color(0, 153, 0));
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("CADASTRO PROFESSOR");
         jLabel25.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel25.setFocusable(false);
         jPanel12.add(jLabel25);
-        jLabel25.setBounds(180, 30, 320, 90);
+        jLabel25.setBounds(10, -30, 600, 190);
 
         jPanel11.add(jPanel12);
-        jPanel12.setBounds(0, 0, 600, 150);
+        jPanel12.setBounds(0, 0, 610, 120);
 
         JTextNome_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1034,7 +1035,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
