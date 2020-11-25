@@ -27,128 +27,129 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        bCadastroProf = new javax.swing.JButton();
+        bCadastroAluno = new javax.swing.JButton();
         bLogar = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(null);
 
-        jPanel2.setLayout(null);
-
-        jButton4.setBackground(new java.awt.Color(153, 0, 153));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 153));
-        jButton4.setText("Cadastro Professor");
-        jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        bCadastroProf.setBackground(new java.awt.Color(0, 102, 0));
+        bCadastroProf.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bCadastroProf.setForeground(new java.awt.Color(255, 255, 255));
+        bCadastroProf.setText("Cadastro Professor");
+        bCadastroProf.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 0), new java.awt.Color(0, 102, 0)));
+        bCadastroProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bCadastroProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bCadastroProfActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4);
-        jButton4.setBounds(40, 430, 150, 50);
+        getContentPane().add(bCadastroProf);
+        bCadastroProf.setBounds(40, 430, 150, 50);
 
-        jButton3.setBackground(new java.awt.Color(153, 0, 153));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 153));
-        jButton3.setText("Cadastro Aluno");
-        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        bCadastroAluno.setBackground(new java.awt.Color(0, 102, 0));
+        bCadastroAluno.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bCadastroAluno.setForeground(new java.awt.Color(255, 255, 255));
+        bCadastroAluno.setText("Cadastro Aluno");
+        bCadastroAluno.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 0), new java.awt.Color(0, 102, 0)));
+        bCadastroAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bCadastroAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                bCadastroAlunoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3);
-        jButton3.setBounds(370, 430, 150, 50);
+        getContentPane().add(bCadastroAluno);
+        bCadastroAluno.setBounds(420, 430, 150, 50);
 
-        bLogar.setBackground(new java.awt.Color(153, 0, 153));
+        bLogar.setBackground(new java.awt.Color(0, 102, 0));
         bLogar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bLogar.setForeground(new java.awt.Color(255, 255, 153));
+        bLogar.setForeground(new java.awt.Color(255, 255, 255));
         bLogar.setText("Entrar");
-        bLogar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
+        bLogar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 0), new java.awt.Color(0, 102, 0)));
         bLogar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bLogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bLogarActionPerformed(evt);
             }
         });
-        jPanel2.add(bLogar);
-        bLogar.setBounds(230, 430, 100, 50);
+        getContentPane().add(bLogar);
+        bLogar.setBounds(260, 430, 100, 50);
 
         jPasswordField1.setText("SENHAlegal");
         jPasswordField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        jPanel2.add(jPasswordField1);
-        jPasswordField1.setBounds(200, 300, 180, 40);
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Senha");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(200, 280, 50, 20);
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("UAU4324254");
-        jTextField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jPasswordField1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(200, 230, 180, 40);
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(200, 300, 180, 40);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Usuario");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(200, 210, 60, 20);
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("Senha");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(200, 280, 50, 20);
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel1.setLayout(null);
+        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField3.setText("UAU4324254");
+        jTextField3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3);
+        jTextField3.setBounds(200, 230, 180, 40);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 153));
-        jLabel1.setText("Login");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(240, 30, 170, 60);
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("Usuário");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(200, 210, 70, 20);
 
-        jPanel2.add(jPanel1);
-        jPanel1.setBounds(0, 0, 600, 120);
+        jPanel8.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel8.setLayout(null);
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 0, 600, 500);
+        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("LOGIN");
+        jPanel8.add(jLabel9);
+        jLabel9.setBounds(210, 30, 170, 60);
+
+        getContentPane().add(jPanel8);
+        jPanel8.setBounds(0, 0, 610, 120);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void bCadastroProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCadastroProfActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_bCadastroProfActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void bCadastroAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCadastroAlunoActionPerformed
+
+    }//GEN-LAST:event_bCadastroAlunoActionPerformed
 
     private void bLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogarActionPerformed
-        // Checar com um if se a senha encoded eh == a senha enconded no banco de dados
-        //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
-        //passar de painel
-        
+
     }//GEN-LAST:event_bLogarActionPerformed
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,15 +187,14 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bCadastroAluno;
+    private javax.swing.JButton bCadastroProf;
     private javax.swing.JButton bLogar;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

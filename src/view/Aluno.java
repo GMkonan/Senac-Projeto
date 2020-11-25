@@ -27,76 +27,68 @@ public class Aluno extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bNotasAluno = new javax.swing.JButton();
-        bExerciciosAluno = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        bExerciciosAluno = new javax.swing.JButton();
+        bNotasAluno = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        bNotasAluno.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bNotasAluno.setText("NOTAS");
-        bNotasAluno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        bNotasAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bNotasAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bNotasAlunoActionPerformed(evt);
-            }
-        });
+        jPanel2.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel2.setMaximumSize(new java.awt.Dimension(610, 610));
+        jPanel2.setMinimumSize(new java.awt.Dimension(120, 120));
+        jPanel2.setLayout(null);
 
-        bExerciciosAluno.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(255, 255, 102));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("ALUNO");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(220, -50, 330, 230);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 612, 120);
+
+        bExerciciosAluno.setBackground(new java.awt.Color(0, 102, 0));
+        bExerciciosAluno.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bExerciciosAluno.setForeground(new java.awt.Color(255, 255, 255));
         bExerciciosAluno.setText("EXERCÍCIOS");
-        bExerciciosAluno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        bExerciciosAluno.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
         bExerciciosAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bExerciciosAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bExerciciosAlunoActionPerformed(evt);
             }
         });
+        getContentPane().add(bExerciciosAluno);
+        bExerciciosAluno.setBounds(63, 298, 190, 110);
 
-        jPanel2.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel2.setLayout(null);
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 102));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 102));
-        jLabel2.setText("Aluno");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(230, -30, 330, 230);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(bExerciciosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(bNotasAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bExerciciosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bNotasAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(77, 77, 77))
-        );
+        bNotasAluno.setBackground(new java.awt.Color(0, 102, 0));
+        bNotasAluno.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bNotasAluno.setForeground(new java.awt.Color(255, 255, 255));
+        bNotasAluno.setText("NOTAS");
+        bNotasAluno.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 0), new java.awt.Color(0, 102, 0)));
+        bNotasAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bNotasAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bNotasAlunoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bNotasAluno);
+        bNotasAluno.setBounds(350, 298, 190, 110);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bNotasAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotasAlunoActionPerformed
-
-    }//GEN-LAST:event_bNotasAlunoActionPerformed
-
     private void bExerciciosAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosAlunoActionPerformed
 
     }//GEN-LAST:event_bExerciciosAlunoActionPerformed
+
+    private void bNotasAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotasAlunoActionPerformed
+
+    }//GEN-LAST:event_bNotasAlunoActionPerformed
 
     /**
      * @param args the command line arguments

@@ -27,39 +27,40 @@ public class CriarExercicios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
         jTextNome_Exercicios = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextQuestao_Exercicios1 = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jTextQuestao_Exercicios3 = new javax.swing.JTextField();
         jRadioButton1 = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jTextNome_Exercicios1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
         jTextNome_Exercicios3 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jTextNome_Exercicios4 = new javax.swing.JTextField();
+        bVoltarCriarExercicios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel1.setLayout(null);
+        jPanel18.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel18.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel1.setText("Criar Exercícios");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(310, 30, 410, 75);
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("CRIAR EXERCÍCIOS");
+        jPanel18.add(jLabel30);
+        jLabel30.setBounds(50, 10, 530, 100);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 970, 140);
+        getContentPane().add(jPanel18);
+        jPanel18.setBounds(0, 0, 610, 120);
 
-        jLabel2.setText("Professor");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 160, 70, 14);
+        jLabel31.setText("Professor");
+        getContentPane().add(jLabel31);
+        jLabel31.setBounds(20, 160, 70, 14);
 
         jTextNome_Exercicios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,19 +68,19 @@ public class CriarExercicios extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextNome_Exercicios);
-        jTextNome_Exercicios.setBounds(80, 560, 30, 20);
+        jTextNome_Exercicios.setBounds(100, 430, 30, 20);
 
-        jLabel4.setText("Questão ");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 250, 60, 20);
+        jLabel32.setText("Questão ");
+        getContentPane().add(jLabel32);
+        jLabel32.setBounds(20, 220, 60, 20);
 
-        jTextQuestao_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
+        jTextQuestao_Exercicios3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextQuestao_Exercicios1ActionPerformed(evt);
+                jTextQuestao_Exercicios3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextQuestao_Exercicios1);
-        jTextQuestao_Exercicios1.setBounds(20, 280, 450, 160);
+        getContentPane().add(jTextQuestao_Exercicios3);
+        jTextQuestao_Exercicios3.setBounds(20, 240, 450, 100);
 
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,11 +88,11 @@ public class CriarExercicios extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(70, 460, 21, 21);
+        jRadioButton1.setBounds(30, 350, 21, 21);
 
-        jLabel3.setText("Título");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 210, 70, 14);
+        jLabel33.setText("Título");
+        getContentPane().add(jLabel33);
+        jLabel33.setBounds(20, 190, 70, 14);
 
         jTextNome_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,13 +102,13 @@ public class CriarExercicios extends javax.swing.JFrame {
         getContentPane().add(jTextNome_Exercicios1);
         jTextNome_Exercicios1.setBounds(80, 160, 110, 20);
 
-        jButton1.setText("ADICIONAR QUESTÃO");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(20, 590, 150, 30);
+        jButton5.setText("ADICIONAR QUESTÃO");
+        getContentPane().add(jButton5);
+        jButton5.setBounds(20, 460, 160, 30);
 
-        jLabel7.setText("Resposta");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(20, 560, 60, 14);
+        jLabel34.setText("Resposta");
+        getContentPane().add(jLabel34);
+        jLabel34.setBounds(30, 430, 60, 14);
 
         jTextNome_Exercicios3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,11 +116,11 @@ public class CriarExercicios extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextNome_Exercicios3);
-        jTextNome_Exercicios3.setBounds(70, 210, 130, 20);
+        jTextNome_Exercicios3.setBounds(80, 190, 130, 20);
 
-        jButton2.setText("ADICIONAR OPÇÃO");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(30, 500, 140, 30);
+        jButton7.setText("ADICIONAR OPÇÃO");
+        getContentPane().add(jButton7);
+        jButton7.setBounds(30, 390, 140, 30);
 
         jTextNome_Exercicios4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,7 +128,21 @@ public class CriarExercicios extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextNome_Exercicios4);
-        jTextNome_Exercicios4.setBounds(110, 460, 430, 30);
+        jTextNome_Exercicios4.setBounds(70, 350, 430, 30);
+
+        bVoltarCriarExercicios.setBackground(new java.awt.Color(0, 102, 51));
+        bVoltarCriarExercicios.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarCriarExercicios.setForeground(new java.awt.Color(255, 255, 255));
+        bVoltarCriarExercicios.setText("Voltar");
+        bVoltarCriarExercicios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bVoltarCriarExercicios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarCriarExercicios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVoltarCriarExerciciosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bVoltarCriarExercicios);
+        bVoltarCriarExercicios.setBounds(480, 540, 100, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -136,9 +151,9 @@ public class CriarExercicios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextNome_ExerciciosActionPerformed
 
-    private void jTextQuestao_Exercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios1ActionPerformed
+    private void jTextQuestao_Exercicios3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextQuestao_Exercicios1ActionPerformed
+    }//GEN-LAST:event_jTextQuestao_Exercicios3ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
@@ -155,6 +170,10 @@ public class CriarExercicios extends javax.swing.JFrame {
     private void jTextNome_Exercicios4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextNome_Exercicios4ActionPerformed
+
+    private void bVoltarCriarExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarCriarExerciciosActionPerformed
+
+    }//GEN-LAST:event_bVoltarCriarExerciciosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,19 +211,20 @@ public class CriarExercicios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton bVoltarCriarExercicios;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jTextNome_Exercicios;
     private javax.swing.JTextField jTextNome_Exercicios1;
     private javax.swing.JTextField jTextNome_Exercicios3;
     private javax.swing.JTextField jTextNome_Exercicios4;
-    private javax.swing.JTextField jTextQuestao_Exercicios1;
+    private javax.swing.JTextField jTextQuestao_Exercicios3;
     // End of variables declaration//GEN-END:variables
 }

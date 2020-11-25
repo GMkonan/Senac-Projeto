@@ -27,56 +27,47 @@ public class ListaDeExercicios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jTextQuestao_Exercicios1 = new javax.swing.JTextField();
+        bVoltarExerciciosAluno1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel1.setLayout(null);
+        jPanel4.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel4.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel1.setText("Exercicios");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(370, 20, 334, 75);
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("EXERCÍCIOS");
+        jPanel4.add(jLabel1);
+        jLabel1.setBounds(150, 20, 334, 75);
 
-        jLabel2.setText("TÍTULO");
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(0, 0, 640, 120);
 
         jTextQuestao_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextQuestao_Exercicios1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextQuestao_Exercicios1);
+        jTextQuestao_Exercicios1.setBounds(22, 169, 485, 181);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 970, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 10, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 159, Short.MAX_VALUE))
-        );
+        bVoltarExerciciosAluno1.setBackground(new java.awt.Color(0, 102, 51));
+        bVoltarExerciciosAluno1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarExerciciosAluno1.setForeground(new java.awt.Color(255, 255, 255));
+        bVoltarExerciciosAluno1.setText("Voltar");
+        bVoltarExerciciosAluno1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bVoltarExerciciosAluno1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarExerciciosAluno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVoltarExerciciosAluno1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bVoltarExerciciosAluno1);
+        bVoltarExerciciosAluno1.setBounds(22, 528, 100, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -84,6 +75,10 @@ public class ListaDeExercicios extends javax.swing.JFrame {
     private void jTextQuestao_Exercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextQuestao_Exercicios1ActionPerformed
+
+    private void bVoltarExerciciosAluno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosAluno1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bVoltarExerciciosAluno1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,9 +117,9 @@ public class ListaDeExercicios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bVoltarExerciciosAluno1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField jTextQuestao_Exercicios1;
     // End of variables declaration//GEN-END:variables
 }

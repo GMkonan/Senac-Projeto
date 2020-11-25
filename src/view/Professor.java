@@ -36,46 +36,11 @@ public class Professor extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        pProfessor = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        bExerciciosProf1 = new javax.swing.JButton();
         bExerciciosProf = new javax.swing.JButton();
         bNotaProf = new javax.swing.JButton();
-        bCriarExerciciosProf = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextQuestao_Exercicios1 = new javax.swing.JTextField();
-        bVoltarExercicios = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextNome_Exercicios = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextQuestao_Exercicios2 = new javax.swing.JTextField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jLabel9 = new javax.swing.JLabel();
-        jTextNome_Exercicios1 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jTextNome_Exercicios3 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
-        jTextNome_Exercicios4 = new javax.swing.JTextField();
-        bVoltarCriarExercicios = new javax.swing.JButton();
-        jPanel10 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        bVoltarNotaProf = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        bVoltarCriarExercicios1 = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
 
         jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -145,354 +110,71 @@ public class Professor extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        pProfessor.setLayout(new java.awt.CardLayout());
+        bExerciciosProf1.setBackground(new java.awt.Color(0, 102, 51));
+        bExerciciosProf1.setText("EXERCÍCIOS");
+        bExerciciosProf1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bExerciciosProf1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bExerciciosProf1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bExerciciosProf1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bExerciciosProf1);
+        bExerciciosProf1.setBounds(60, 300, 150, 101);
 
-        jPanel3.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel3.setForeground(new java.awt.Color(153, 0, 153));
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 153));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 102));
-        jLabel3.setText("Professor");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(177, 177, 177)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(65, 65, 65))
-        );
-
-        bExerciciosProf.setText("EXERCÍCIOS");
-        bExerciciosProf.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        bExerciciosProf.setBackground(new java.awt.Color(0, 102, 51));
+        bExerciciosProf.setText("CRIAR EXERCÍCIOS");
+        bExerciciosProf.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
         bExerciciosProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bExerciciosProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bExerciciosProfActionPerformed(evt);
             }
         });
+        getContentPane().add(bExerciciosProf);
+        bExerciciosProf.setBounds(230, 300, 150, 101);
 
+        bNotaProf.setBackground(new java.awt.Color(0, 102, 51));
         bNotaProf.setText("NOTAS");
-        bNotaProf.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        bNotaProf.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
         bNotaProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bNotaProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bNotaProfActionPerformed(evt);
             }
         });
+        getContentPane().add(bNotaProf);
+        bNotaProf.setBounds(410, 300, 150, 101);
 
-        bCriarExerciciosProf.setText("CRIAR EXERCÍCIOS");
-        bCriarExerciciosProf.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        bCriarExerciciosProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bCriarExerciciosProf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bCriarExerciciosProfActionPerformed(evt);
-            }
-        });
+        jPanel14.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel14.setForeground(new java.awt.Color(153, 0, 153));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addComponent(bExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bCriarExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bNotaProf, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+        jLabel27.setBackground(new java.awt.Color(10, 10, 10));
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("PROFESSOR");
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(jLabel27)
+                .addContainerGap(164, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bNotaProf, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bCriarExerciciosProf, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(87, 87, 87))
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap(36, Short.MAX_VALUE)
+                .addComponent(jLabel27)
+                .addGap(26, 26, 26))
         );
 
-        pProfessor.add(jPanel5, "cProfessor");
-
-        jPanel6.setPreferredSize(new java.awt.Dimension(612, 500));
-
-        jPanel7.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel7.setLayout(null);
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel4.setText("Exercicios");
-        jPanel7.add(jLabel4);
-        jLabel4.setBounds(180, 40, 334, 75);
-
-        jLabel5.setText("TÍTULO");
-
-        jTextQuestao_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextQuestao_Exercicios1ActionPerformed(evt);
-            }
-        });
-
-        bVoltarExercicios.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarExercicios.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarExercicios.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarExercicios.setText("Voltar");
-        bVoltarExercicios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarExercicios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarExercicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarExerciciosActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(bVoltarExercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(89, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextQuestao_Exercicios1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(bVoltarExercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
-        );
-
-        pProfessor.add(jPanel6, "cExercicios");
-
-        jPanel8.setLayout(null);
-
-        jPanel9.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel9.setLayout(null);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel6.setText("Criar Exercícios");
-        jPanel9.add(jLabel6);
-        jLabel6.setBounds(130, 30, 410, 75);
-
-        jPanel8.add(jPanel9);
-        jPanel9.setBounds(0, 0, 600, 140);
-
-        jLabel7.setText("Professor");
-        jPanel8.add(jLabel7);
-        jLabel7.setBounds(20, 160, 70, 14);
-
-        jTextNome_Exercicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextNome_ExerciciosActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jTextNome_Exercicios);
-        jTextNome_Exercicios.setBounds(100, 430, 30, 20);
-
-        jLabel8.setText("Questão ");
-        jPanel8.add(jLabel8);
-        jLabel8.setBounds(20, 220, 60, 20);
-
-        jTextQuestao_Exercicios2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextQuestao_Exercicios2ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jTextQuestao_Exercicios2);
-        jTextQuestao_Exercicios2.setBounds(20, 240, 450, 100);
-
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jRadioButton1);
-        jRadioButton1.setBounds(30, 350, 21, 21);
-
-        jLabel9.setText("Título");
-        jPanel8.add(jLabel9);
-        jLabel9.setBounds(20, 190, 70, 14);
-
-        jTextNome_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextNome_Exercicios1ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jTextNome_Exercicios1);
-        jTextNome_Exercicios1.setBounds(80, 160, 110, 20);
-
-        jButton3.setText("ADICIONAR QUESTÃO");
-        jPanel8.add(jButton3);
-        jButton3.setBounds(20, 460, 160, 30);
-
-        jLabel10.setText("Resposta");
-        jPanel8.add(jLabel10);
-        jLabel10.setBounds(30, 430, 60, 14);
-
-        jTextNome_Exercicios3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextNome_Exercicios3ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jTextNome_Exercicios3);
-        jTextNome_Exercicios3.setBounds(80, 190, 130, 20);
-
-        jButton7.setText("ADICIONAR OPÇÃO");
-        jPanel8.add(jButton7);
-        jButton7.setBounds(30, 390, 140, 30);
-
-        jTextNome_Exercicios4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextNome_Exercicios4ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jTextNome_Exercicios4);
-        jTextNome_Exercicios4.setBounds(70, 350, 430, 30);
-
-        bVoltarCriarExercicios.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarCriarExercicios.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarCriarExercicios.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarCriarExercicios.setText("Voltar");
-        bVoltarCriarExercicios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarCriarExercicios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarCriarExercicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarCriarExerciciosActionPerformed(evt);
-            }
-        });
-        jPanel8.add(bVoltarCriarExercicios);
-        bVoltarCriarExercicios.setBounds(390, 440, 100, 50);
-
-        pProfessor.add(jPanel8, "cCriarExercicios");
-
-        jPanel10.setLayout(null);
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel10.add(jTextField1);
-        jTextField1.setBounds(90, 150, 244, 31);
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setText("Aluno");
-        jPanel10.add(jLabel11);
-        jLabel11.setBounds(20, 220, 50, 20);
-
-        bVoltarNotaProf.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarNotaProf.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarNotaProf.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarNotaProf.setText("Voltar");
-        bVoltarNotaProf.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarNotaProf.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarNotaProf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarNotaProfActionPerformed(evt);
-            }
-        });
-        jPanel10.add(bVoltarNotaProf);
-        bVoltarNotaProf.setBounds(30, 560, 100, 50);
-
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel10.add(jTextField2);
-        jTextField2.setBounds(90, 210, 190, 31);
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Nota");
-        jPanel10.add(jLabel12);
-        jLabel12.setBounds(20, 280, 50, 20);
-
-        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 102, 102), null));
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-        jPanel10.add(jTextField3);
-        jTextField3.setBounds(90, 270, 57, 31);
-
-        jPanel11.setBackground(new java.awt.Color(153, 0, 153));
-        jPanel11.setLayout(null);
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 153));
-        jLabel13.setText("NOTA PROFESSOR");
-        jPanel11.add(jLabel13);
-        jLabel13.setBounds(80, 30, 500, 60);
-
-        jPanel10.add(jPanel11);
-        jPanel11.setBounds(6, 0, 600, 120);
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setText("Título");
-        jPanel10.add(jLabel14);
-        jLabel14.setBounds(20, 160, 60, 20);
-
-        bVoltarCriarExercicios1.setBackground(new java.awt.Color(153, 0, 153));
-        bVoltarCriarExercicios1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bVoltarCriarExercicios1.setForeground(new java.awt.Color(255, 255, 153));
-        bVoltarCriarExercicios1.setText("Voltar");
-        bVoltarCriarExercicios1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(153, 0, 153), new java.awt.Color(153, 0, 153)));
-        bVoltarCriarExercicios1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bVoltarCriarExercicios1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bVoltarCriarExercicios1ActionPerformed(evt);
-            }
-        });
-        jPanel10.add(bVoltarCriarExercicios1);
-        bVoltarCriarExercicios1.setBounds(410, 430, 100, 50);
-
-        pProfessor.add(jPanel10, "cNotaProf");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pProfessor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pProfessor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel14);
+        jPanel14.setBounds(0, 0, 620, 120);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -505,80 +187,17 @@ public class Professor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void bNotaProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotaProfActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cNotaProf");
-    }//GEN-LAST:event_bNotaProfActionPerformed
+    private void bExerciciosProf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosProf1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bExerciciosProf1ActionPerformed
 
     private void bExerciciosProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosProfActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cExercicios");
+
     }//GEN-LAST:event_bExerciciosProfActionPerformed
 
-    private void jTextQuestao_Exercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextQuestao_Exercicios1ActionPerformed
+    private void bNotaProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNotaProfActionPerformed
 
-    private void jTextNome_ExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_ExerciciosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextNome_ExerciciosActionPerformed
-
-    private void jTextQuestao_Exercicios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextQuestao_Exercicios2ActionPerformed
-
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
-    private void jTextNome_Exercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextNome_Exercicios1ActionPerformed
-
-    private void jTextNome_Exercicios3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextNome_Exercicios3ActionPerformed
-
-    private void jTextNome_Exercicios4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextNome_Exercicios4ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void bCriarExerciciosProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCriarExerciciosProfActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cCriarExercicios");
-    }//GEN-LAST:event_bCriarExerciciosProfActionPerformed
-
-    private void bVoltarCriarExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarCriarExerciciosActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cProfessor");
-    }//GEN-LAST:event_bVoltarCriarExerciciosActionPerformed
-
-    private void bVoltarNotaProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarNotaProfActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cProfessor");
-    }//GEN-LAST:event_bVoltarNotaProfActionPerformed
-
-    private void bVoltarExerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cProfessor");
-    }//GEN-LAST:event_bVoltarExerciciosActionPerformed
-
-    private void bVoltarCriarExercicios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarCriarExercicios1ActionPerformed
-        CardLayout card = (CardLayout)pProfessor.getLayout();
-        card.show(pProfessor, "cProfessor");
-    }//GEN-LAST:event_bVoltarCriarExercicios1ActionPerformed
+    }//GEN-LAST:event_bNotaProfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -617,52 +236,17 @@ public class Professor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bCriarExerciciosProf;
     private javax.swing.JButton bExerciciosProf;
+    private javax.swing.JButton bExerciciosProf1;
     private javax.swing.JButton bNotaProf;
-    private javax.swing.JButton bVoltarCriarExercicios;
-    private javax.swing.JButton bVoltarCriarExercicios1;
-    private javax.swing.JButton bVoltarExercicios;
-    private javax.swing.JButton bVoltarNotaProf;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton7;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextNome_Exercicios;
-    private javax.swing.JTextField jTextNome_Exercicios1;
-    private javax.swing.JTextField jTextNome_Exercicios3;
-    private javax.swing.JTextField jTextNome_Exercicios4;
-    private javax.swing.JTextField jTextQuestao_Exercicios1;
-    private javax.swing.JTextField jTextQuestao_Exercicios2;
-    private javax.swing.JPanel pProfessor;
     // End of variables declaration//GEN-END:variables
 }
