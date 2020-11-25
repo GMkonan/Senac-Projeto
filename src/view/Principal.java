@@ -9,6 +9,7 @@ import data.AlunosDAO;
 import data.ProfessoresDAO;
 import java.awt.*;
 import java.util.Base64;
+import javax.swing.JOptionPane;
 /**
  *
  * @author sala18a
@@ -1158,7 +1159,14 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        alunos.aluno.setNOME_ALUNOS(jTextNome_alunos.getText());
+        alunos.aluno.setSerie_Alunos((String) jComboBox1.getSelectedItem());
+        alunos.aluno.setMatricula_alunos(jTextNome_alunos1.getText());
+        alunos.aluno.setTurno_Alunos((String) jComboBox2.getSelectedItem());
+        alunos.aluno.setEmail_alunos(jTextNome_alunos2.getText());
+        alunos.aluno.setLogin_alunos(jTextCod_alunos3.getText());
+        alunos.aluno.setSenha_alunos(jPasswordField2.getText());
+        JOptionPane.showMessageDialog(null, alunos.atualizar(AlunosDAO.INCLUSAO));
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
