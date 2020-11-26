@@ -55,7 +55,8 @@ public class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         bExerciciosAluno = new javax.swing.JButton();
         bNotasAluno = new javax.swing.JButton();
-        pExercíciosAluno = new javax.swing.JPanel();
+        bVoltarExerciciosAluno2 = new javax.swing.JButton();
+        pExerciciosAluno = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextQuestao_Exercicios1 = new javax.swing.JTextField();
@@ -95,7 +96,6 @@ public class Principal extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jTextEmail_Professor = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         JTextNome_Professor = new javax.swing.JTextField();
@@ -109,6 +109,15 @@ public class Principal extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
+        jTextEmail_Professor1 = new javax.swing.JTextField();
+        jTextUF_Professor = new javax.swing.JTextField();
+        jTextTelefone_Professor = new javax.swing.JTextField();
+        jTextEndereco_Professor = new javax.swing.JTextField();
+        jTextDisciplina_Professor = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
         pProfessor = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
@@ -147,6 +156,18 @@ public class Principal extends javax.swing.JFrame {
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         bVoltarCriarExercicios3 = new javax.swing.JButton();
+        pFazerExercicios = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextNome_Exercicios2 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jTextQuestao_Exercicios4 = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jTextNome_Exercicios5 = new javax.swing.JTextField();
+        bVoltarCriarExercicios2 = new javax.swing.JButton();
+        bVoltarCriarExercicios4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -288,9 +309,23 @@ public class Principal extends javax.swing.JFrame {
         pAluno.add(bNotasAluno);
         bNotasAluno.setBounds(350, 298, 190, 110);
 
+        bVoltarExerciciosAluno2.setBackground(new java.awt.Color(0, 102, 51));
+        bVoltarExerciciosAluno2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarExerciciosAluno2.setForeground(new java.awt.Color(255, 255, 255));
+        bVoltarExerciciosAluno2.setText("Voltar");
+        bVoltarExerciciosAluno2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bVoltarExerciciosAluno2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarExerciciosAluno2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVoltarExerciciosAluno2ActionPerformed(evt);
+            }
+        });
+        pAluno.add(bVoltarExerciciosAluno2);
+        bVoltarExerciciosAluno2.setBounds(22, 528, 100, 50);
+
         pMenu.add(pAluno, "cAluno");
 
-        pExercíciosAluno.setLayout(null);
+        pExerciciosAluno.setLayout(null);
 
         jPanel4.setBackground(new java.awt.Color(0, 153, 0));
         jPanel4.setLayout(null);
@@ -301,7 +336,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel4.add(jLabel1);
         jLabel1.setBounds(140, 20, 334, 75);
 
-        pExercíciosAluno.add(jPanel4);
+        pExerciciosAluno.add(jPanel4);
         jPanel4.setBounds(0, 0, 640, 120);
 
         jTextQuestao_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
@@ -309,7 +344,7 @@ public class Principal extends javax.swing.JFrame {
                 jTextQuestao_Exercicios1ActionPerformed(evt);
             }
         });
-        pExercíciosAluno.add(jTextQuestao_Exercicios1);
+        pExerciciosAluno.add(jTextQuestao_Exercicios1);
         jTextQuestao_Exercicios1.setBounds(22, 169, 485, 181);
 
         bVoltarExerciciosAluno1.setBackground(new java.awt.Color(0, 102, 51));
@@ -323,10 +358,10 @@ public class Principal extends javax.swing.JFrame {
                 bVoltarExerciciosAluno1ActionPerformed(evt);
             }
         });
-        pExercíciosAluno.add(bVoltarExerciciosAluno1);
+        pExerciciosAluno.add(bVoltarExerciciosAluno1);
         bVoltarExerciciosAluno1.setBounds(22, 528, 100, 50);
 
-        pMenu.add(pExercíciosAluno, "cExerciciosAluno");
+        pMenu.add(pExerciciosAluno, "cExerciciosAluno");
 
         jPanel6.setBackground(new java.awt.Color(0, 153, 0));
         jPanel6.setLayout(null);
@@ -410,7 +445,7 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(5, 5, 5)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 278, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 322, Short.MAX_VALUE)
                 .addComponent(bVoltarNota, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
         );
@@ -434,7 +469,7 @@ public class Principal extends javax.swing.JFrame {
         pCadastroAluno.add(jPanel10);
         jPanel10.setBounds(0, 0, 610, 100);
         pCadastroAluno.add(jPasswordField2);
-        jPasswordField2.setBounds(80, 290, 80, 22);
+        jPasswordField2.setBounds(80, 290, 80, 20);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Matutino", "Vespertino", "Noturno", "Integral" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -443,7 +478,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jComboBox2);
-        jComboBox2.setBounds(80, 200, 90, 26);
+        jComboBox2.setBounds(80, 200, 90, 20);
 
         jButton2.setBackground(new java.awt.Color(0, 102, 51));
         jButton2.setText("Voltar");
@@ -458,11 +493,11 @@ public class Principal extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
         pCadastroAluno.add(jComboBox1);
-        jComboBox1.setBounds(90, 140, 40, 26);
+        jComboBox1.setBounds(90, 140, 40, 20);
 
         jLabel11.setText("Senha");
         pCadastroAluno.add(jLabel11);
-        jLabel11.setBounds(40, 290, 60, 16);
+        jLabel11.setBounds(40, 290, 60, 14);
 
         jTextCod_alunos3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -470,11 +505,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextCod_alunos3);
-        jTextCod_alunos3.setBounds(80, 260, 75, 24);
+        jTextCod_alunos3.setBounds(80, 260, 75, 20);
 
         jLabel12.setText("Login");
         pCadastroAluno.add(jLabel12);
-        jLabel12.setBounds(40, 260, 63, 16);
+        jLabel12.setBounds(40, 260, 63, 14);
 
         jTextNome_alunos2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -482,15 +517,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos2);
-        jTextNome_alunos2.setBounds(80, 230, 170, 24);
+        jTextNome_alunos2.setBounds(80, 230, 170, 20);
 
         jLabel13.setText("Email");
         pCadastroAluno.add(jLabel13);
-        jLabel13.setBounds(40, 230, 60, 16);
+        jLabel13.setBounds(40, 230, 60, 14);
 
         jLabel14.setText("Turno");
         pCadastroAluno.add(jLabel14);
-        jLabel14.setBounds(40, 200, 63, 16);
+        jLabel14.setBounds(40, 200, 63, 14);
 
         jTextNome_alunos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -498,15 +533,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos1);
-        jTextNome_alunos1.setBounds(90, 170, 50, 24);
+        jTextNome_alunos1.setBounds(90, 170, 50, 20);
 
         jLabel15.setText("Matricula");
         pCadastroAluno.add(jLabel15);
-        jLabel15.setBounds(30, 170, 60, 16);
+        jLabel15.setBounds(30, 170, 60, 14);
 
         jLabel16.setText("Série");
         pCadastroAluno.add(jLabel16);
-        jLabel16.setBounds(40, 140, 63, 16);
+        jLabel16.setBounds(40, 140, 63, 14);
 
         jTextNome_alunos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -514,11 +549,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos);
-        jTextNome_alunos.setBounds(80, 110, 100, 24);
+        jTextNome_alunos.setBounds(80, 110, 100, 20);
 
         jLabel17.setText("Nome");
         pCadastroAluno.add(jLabel17);
-        jLabel17.setBounds(40, 110, 60, 16);
+        jLabel17.setBounds(40, 110, 60, 14);
 
         jButton6.setBackground(new java.awt.Color(0, 102, 51));
         jButton6.setText("Salvar");
@@ -542,35 +577,27 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel19.setText("Idade");
         pCadastroProfessor.add(jLabel19);
-        jLabel19.setBounds(20, 190, 50, 16);
+        jLabel19.setBounds(20, 190, 50, 14);
 
         jLabel20.setText("CPF");
         pCadastroProfessor.add(jLabel20);
-        jLabel20.setBounds(20, 230, 50, 16);
+        jLabel20.setBounds(20, 230, 50, 14);
 
         jLabel21.setText("RG");
         pCadastroProfessor.add(jLabel21);
-        jLabel21.setBounds(20, 270, 30, 16);
+        jLabel21.setBounds(20, 270, 30, 14);
 
         jLabel22.setText("Turno");
         pCadastroProfessor.add(jLabel22);
-        jLabel22.setBounds(20, 310, 50, 16);
+        jLabel22.setBounds(20, 310, 50, 14);
 
         jLabel23.setText("Senha");
         pCadastroProfessor.add(jLabel23);
-        jLabel23.setBounds(20, 430, 60, 16);
+        jLabel23.setBounds(10, 570, 60, 14);
 
         jLabel24.setText("Login");
         pCadastroProfessor.add(jLabel24);
-        jLabel24.setBounds(20, 390, 50, 16);
-
-        jTextEmail_Professor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextEmail_ProfessorActionPerformed(evt);
-            }
-        });
-        pCadastroProfessor.add(jTextEmail_Professor);
-        jTextEmail_Professor.setBounds(80, 350, 250, 24);
+        jLabel24.setBounds(10, 540, 50, 14);
 
         jPanel12.setBackground(new java.awt.Color(0, 153, 0));
         jPanel12.setToolTipText("Teste");
@@ -594,7 +621,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(JTextNome_Professor);
-        JTextNome_Professor.setBounds(80, 160, 200, 24);
+        JTextNome_Professor.setBounds(80, 160, 200, 20);
 
         jTexIdade_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -602,7 +629,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTexIdade_Professor);
-        jTexIdade_Professor.setBounds(80, 190, 40, 24);
+        jTexIdade_Professor.setBounds(80, 190, 40, 20);
 
         jTextCPF_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -610,7 +637,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextCPF_Professor);
-        jTextCPF_Professor.setBounds(80, 230, 120, 24);
+        jTextCPF_Professor.setBounds(80, 230, 120, 20);
 
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -618,7 +645,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextField18);
-        jTextField18.setBounds(80, 270, 90, 24);
+        jTextField18.setBounds(80, 270, 90, 20);
 
         jTextTurno_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -626,7 +653,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextTurno_Professor);
-        jTextTurno_Professor.setBounds(80, 310, 30, 24);
+        jTextTurno_Professor.setBounds(80, 310, 30, 20);
 
         jTextLogin_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -634,13 +661,13 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextLogin_Professor);
-        jTextLogin_Professor.setBounds(80, 390, 130, 24);
+        jTextLogin_Professor.setBounds(50, 540, 130, 20);
 
-        jLabel26.setText("E-MAIL");
+        jLabel26.setText("DISCIPLINA");
         pCadastroProfessor.add(jLabel26);
-        jLabel26.setBounds(20, 350, 60, 16);
+        jLabel26.setBounds(10, 480, 60, 20);
         pCadastroProfessor.add(jPassword_Professor);
-        jPassword_Professor.setBounds(80, 430, 130, 22);
+        jPassword_Professor.setBounds(50, 570, 130, 20);
 
         jButton4.setBackground(new java.awt.Color(0, 102, 51));
         jButton4.setText("Salvar");
@@ -651,7 +678,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jButton4);
-        jButton4.setBounds(200, 500, 66, 32);
+        jButton4.setBounds(190, 600, 66, 32);
 
         jButton9.setBackground(new java.awt.Color(0, 102, 51));
         jButton9.setText("Voltar");
@@ -662,9 +689,65 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jButton9);
-        jButton9.setBounds(270, 500, 66, 32);
+        jButton9.setBounds(270, 600, 66, 32);
         pCadastroProfessor.add(jSeparator3);
-        jSeparator3.setBounds(0, 380, 790, 20);
+        jSeparator3.setBounds(0, 530, 790, 10);
+
+        jTextEmail_Professor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextEmail_Professor1ActionPerformed(evt);
+            }
+        });
+        pCadastroProfessor.add(jTextEmail_Professor1);
+        jTextEmail_Professor1.setBounds(80, 350, 250, 20);
+
+        jTextUF_Professor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextUF_ProfessorActionPerformed(evt);
+            }
+        });
+        pCadastroProfessor.add(jTextUF_Professor);
+        jTextUF_Professor.setBounds(80, 390, 250, 20);
+
+        jTextTelefone_Professor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTelefone_ProfessorActionPerformed(evt);
+            }
+        });
+        pCadastroProfessor.add(jTextTelefone_Professor);
+        jTextTelefone_Professor.setBounds(80, 450, 250, 20);
+
+        jTextEndereco_Professor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextEndereco_ProfessorActionPerformed(evt);
+            }
+        });
+        pCadastroProfessor.add(jTextEndereco_Professor);
+        jTextEndereco_Professor.setBounds(80, 420, 250, 20);
+
+        jTextDisciplina_Professor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextDisciplina_ProfessorActionPerformed(evt);
+            }
+        });
+        pCadastroProfessor.add(jTextDisciplina_Professor);
+        jTextDisciplina_Professor.setBounds(80, 480, 250, 20);
+
+        jLabel42.setText("E-MAIL");
+        pCadastroProfessor.add(jLabel42);
+        jLabel42.setBounds(20, 350, 60, 14);
+
+        jLabel43.setText("UF");
+        pCadastroProfessor.add(jLabel43);
+        jLabel43.setBounds(40, 390, 60, 20);
+
+        jLabel44.setText("ENDERECO");
+        pCadastroProfessor.add(jLabel44);
+        jLabel44.setBounds(20, 420, 60, 20);
+
+        jLabel45.setText("TELEFONE");
+        pCadastroProfessor.add(jLabel45);
+        jLabel45.setBounds(10, 450, 60, 20);
 
         pMenu.add(pCadastroProfessor, "cCadastroProf");
 
@@ -754,7 +837,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel29.setText("TÍTULO");
         pExercicioProfessor.add(jLabel29);
-        jLabel29.setBounds(36, 160, 41, 16);
+        jLabel29.setBounds(36, 160, 36, 14);
 
         jTextQuestao_Exercicios2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -796,7 +879,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel31.setText("Professor");
         pCriarExercícios.add(jLabel31);
-        jLabel31.setBounds(20, 160, 70, 16);
+        jLabel31.setBounds(20, 160, 70, 14);
 
         jTextNome_Exercicios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -804,7 +887,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCriarExercícios.add(jTextNome_Exercicios);
-        jTextNome_Exercicios.setBounds(100, 430, 30, 24);
+        jTextNome_Exercicios.setBounds(100, 430, 30, 20);
 
         jLabel32.setText("Questão ");
         pCriarExercícios.add(jLabel32);
@@ -824,11 +907,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCriarExercícios.add(jRadioButton1);
-        jRadioButton1.setBounds(30, 350, 28, 28);
+        jRadioButton1.setBounds(30, 350, 21, 21);
 
         jLabel33.setText("Título");
         pCriarExercícios.add(jLabel33);
-        jLabel33.setBounds(20, 190, 70, 16);
+        jLabel33.setBounds(20, 190, 70, 14);
 
         jTextNome_Exercicios1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -836,7 +919,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCriarExercícios.add(jTextNome_Exercicios1);
-        jTextNome_Exercicios1.setBounds(80, 160, 110, 24);
+        jTextNome_Exercicios1.setBounds(80, 160, 110, 20);
 
         jButton5.setText("ADICIONAR QUESTÃO");
         pCriarExercícios.add(jButton5);
@@ -844,7 +927,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel34.setText("Resposta");
         pCriarExercícios.add(jLabel34);
-        jLabel34.setBounds(30, 430, 60, 16);
+        jLabel34.setBounds(30, 430, 60, 14);
 
         jTextNome_Exercicios3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -852,7 +935,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCriarExercícios.add(jTextNome_Exercicios3);
-        jTextNome_Exercicios3.setBounds(80, 190, 130, 24);
+        jTextNome_Exercicios3.setBounds(80, 190, 130, 20);
 
         jButton7.setText("ADICIONAR OPÇÃO");
         pCriarExercícios.add(jButton7);
@@ -957,6 +1040,95 @@ public class Principal extends javax.swing.JFrame {
 
         pMenu.add(pNotaProfessor, "cNotaProf");
 
+        pFazerExercicios.setLayout(null);
+
+        jPanel3.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel3.setLayout(null);
+
+        jLabel41.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setText(" EXERCÍCIO");
+        jPanel3.add(jLabel41);
+        jLabel41.setBounds(140, 40, 289, 58);
+
+        pFazerExercicios.add(jPanel3);
+        jPanel3.setBounds(0, 0, 970, 140);
+
+        jLabel3.setText("TÍTULO");
+        pFazerExercicios.add(jLabel3);
+        jLabel3.setBounds(30, 160, 40, 14);
+
+        jTextNome_Exercicios2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNome_Exercicios2ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(jTextNome_Exercicios2);
+        jTextNome_Exercicios2.setBounds(60, 440, 350, 20);
+
+        jLabel39.setText("QUESTÃO 1");
+        pFazerExercicios.add(jLabel39);
+        jLabel39.setBounds(20, 210, 60, 20);
+
+        jTextQuestao_Exercicios4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextQuestao_Exercicios4ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(jTextQuestao_Exercicios4);
+        jTextQuestao_Exercicios4.setBounds(20, 230, 450, 160);
+
+        jLabel40.setText("OPÇÕES");
+        pFazerExercicios.add(jLabel40);
+        jLabel40.setBounds(20, 420, 80, 14);
+
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(jRadioButton2);
+        jRadioButton2.setBounds(30, 440, 21, 21);
+
+        jTextNome_Exercicios5.setText("JAVA");
+        jTextNome_Exercicios5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNome_Exercicios5ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(jTextNome_Exercicios5);
+        jTextNome_Exercicios5.setBounds(80, 160, 40, 20);
+
+        bVoltarCriarExercicios2.setBackground(new java.awt.Color(0, 102, 51));
+        bVoltarCriarExercicios2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarCriarExercicios2.setForeground(new java.awt.Color(255, 255, 255));
+        bVoltarCriarExercicios2.setText("Voltar");
+        bVoltarCriarExercicios2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bVoltarCriarExercicios2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarCriarExercicios2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVoltarCriarExercicios2ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(bVoltarCriarExercicios2);
+        bVoltarCriarExercicios2.setBounds(520, 610, 70, 30);
+
+        bVoltarCriarExercicios4.setBackground(new java.awt.Color(0, 102, 51));
+        bVoltarCriarExercicios4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bVoltarCriarExercicios4.setForeground(new java.awt.Color(255, 255, 255));
+        bVoltarCriarExercicios4.setText("Confirmar");
+        bVoltarCriarExercicios4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 102, 51), new java.awt.Color(0, 102, 51)));
+        bVoltarCriarExercicios4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVoltarCriarExercicios4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVoltarCriarExercicios4ActionPerformed(evt);
+            }
+        });
+        pFazerExercicios.add(bVoltarCriarExercicios4);
+        bVoltarCriarExercicios4.setBounds(433, 610, 80, 30);
+
+        pMenu.add(pFazerExercicios, "card12");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1010,21 +1182,28 @@ public class Principal extends javax.swing.JFrame {
 
     private void bLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogarActionPerformed
         
-        alunos.aluno.setLogin_alunos(jTextField3.getText());
+        alunos.aluno.setLOGIN_ALUNOS(jTextField3.getText());
         alunos.localizar();
         
+        
         professores.professor.setLOGIN_PROFESSOR("usuarioDoProf (pegar da caixa de texto login)");
-        professores.localizar();
+        //professores.localizar();
         //apos localizado,pegar a senha com o get
         //caso n seja igual, aparecer erro (popup ou texto vermelho embaixo) mas caso seja
         String encodeBytes = Base64.getEncoder().encodeToString((jPasswordField1.getText()).getBytes());
-        if(encodeBytes == alunos.aluno.getSenha_alunos()){
+        
+        //if(encodeBytes == alunos.aluno.getSENHA_ALUNOS()){
+        //    CardLayout card = (CardLayout)pMenu.getLayout();
+        //    card.show(pMenu, "cAluno");
+        //}
+        
+        if(encodeBytes.equals(alunos.aluno.getSENHA_ALUNOS())){
             //dentro a parte de card layouts para a tela aluno
             CardLayout card = (CardLayout)pMenu.getLayout();
             card.show(pMenu, "cAluno");
-
         }
-        else if(encodeBytes == professores.professor.getSENHA_PROFESSOR()){
+        
+        else if(encodeBytes.equals(professores.professor.getSENHA_PROFESSOR())){
             //card layout do professor
             CardLayout card = (CardLayout)pAluno.getLayout();
             card.show(pAluno, "cProfessor");
@@ -1047,7 +1226,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        CardLayout card = (CardLayout)pMenu.getLayout();
+            card.show(pMenu, "cLogin");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextCod_alunos3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCod_alunos3ActionPerformed
@@ -1065,10 +1245,6 @@ public class Principal extends javax.swing.JFrame {
     private void jTextNome_alunosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_alunosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextNome_alunosActionPerformed
-
-    private void jTextEmail_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextEmail_ProfessorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextEmail_ProfessorActionPerformed
 
     private void JTextNome_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTextNome_ProfessorActionPerformed
         // TODO add your handling code here:
@@ -1160,21 +1336,38 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         alunos.aluno.setNOME_ALUNOS(jTextNome_alunos.getText());
-        alunos.aluno.setSerie_Alunos((String) jComboBox1.getSelectedItem());
-        alunos.aluno.setMatricula_alunos(jTextNome_alunos1.getText());
-        alunos.aluno.setTurno_Alunos((String) jComboBox2.getSelectedItem());
-        alunos.aluno.setEmail_alunos(jTextNome_alunos2.getText());
-        alunos.aluno.setLogin_alunos(jTextCod_alunos3.getText());
-        alunos.aluno.setSenha_alunos(jPasswordField2.getText());
+        alunos.aluno.setSERIE_ALUNOS((String) jComboBox1.getSelectedItem());
+        alunos.aluno.setMATRICULA_ALUNOS(jTextNome_alunos1.getText());
+        alunos.aluno.setTURNO_ALUNOS((String) jComboBox2.getSelectedItem());
+        alunos.aluno.setEMAIL_ALUNOS(jTextNome_alunos2.getText());
+        alunos.aluno.setLOGIN_ALUNOS(jTextCod_alunos3.getText());
+        alunos.aluno.setSENHA_ALUNOS(jPasswordField2.getText());
         JOptionPane.showMessageDialog(null, alunos.atualizar(AlunosDAO.INCLUSAO));
     }//GEN-LAST:event_jButton6ActionPerformed
-
+        
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        professores.professor.setNOME_PROFESSOR(JTextNome_Professor.getText());
+        professores.professor.setDISCIPLINA_PROFESSOR((String)jTextDisciplina_Professor.getText());
+        professores.professor.setIDADE_PROFESSOR(jTexIdade_Professor.getText());
+        professores.professor.setTELEFONE_PROFESSOR((String) jTextTelefone_Professor.getText());
+        professores.professor.setENDERECO_PROFESSOR(jTextEndereco_Professor.getText());
+        professores.professor.setUF_PROFESSOR(jTextUF_Professor.getText());
+        professores.professor.setCIDADE_PROFESSOR(jPasswordField2.getText());
+        professores.professor.setCPF_PROFESSOR(jTextCPF_Professor.getText());
+        professores.professor.setRG_PROFESSOR(jTextField18.getText());
+        professores.professor.setSEXO_PROFESSOR(jPasswordField2.getText());
+        professores.professor.setBAIRRO_PROFESSOR(jPasswordField2.getText());
+        professores.professor.setTURNO_PROFESSOR(jTextTurno_Professor.getText());
+        professores.professor.setLOGIN_PROFESSOR(jPasswordField2.getText());
+        professores.professor.setSENHA_PROFESSOR(jPassword_Professor.getText());
+        professores.professor.setEMAIL_PROFESSOR(jTextEmail_Professor1.getText());
+        JOptionPane.showMessageDialog(null, professores.atualizar(ProfessoresDAO.INCLUSAO));
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+        CardLayout card = (CardLayout)pMenu.getLayout();
+        card.show(pMenu, "cLogin");
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void bExerciciosProf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExerciciosProf1ActionPerformed
@@ -1186,8 +1379,58 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_bVoltarCriarExercicios3ActionPerformed
 
     private void bVoltarExerciciosAluno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosAluno1ActionPerformed
-        // TODO add your handling code here:
+        CardLayout card = (CardLayout)pMenu.getLayout();
+        card.show(pMenu, "cAluno");
     }//GEN-LAST:event_bVoltarExerciciosAluno1ActionPerformed
+
+    private void bVoltarExerciciosAluno2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarExerciciosAluno2ActionPerformed
+         CardLayout card = (CardLayout)pMenu.getLayout();
+        card.show(pMenu, "cLogin");
+    }//GEN-LAST:event_bVoltarExerciciosAluno2ActionPerformed
+
+    private void jTextNome_Exercicios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextNome_Exercicios2ActionPerformed
+
+    private void jTextQuestao_Exercicios4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextQuestao_Exercicios4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextQuestao_Exercicios4ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jTextNome_Exercicios5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNome_Exercicios5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextNome_Exercicios5ActionPerformed
+
+    private void bVoltarCriarExercicios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarCriarExercicios2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bVoltarCriarExercicios2ActionPerformed
+
+    private void bVoltarCriarExercicios4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVoltarCriarExercicios4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bVoltarCriarExercicios4ActionPerformed
+
+    private void jTextEmail_Professor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextEmail_Professor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextEmail_Professor1ActionPerformed
+
+    private void jTextUF_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextUF_ProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextUF_ProfessorActionPerformed
+
+    private void jTextTelefone_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTelefone_ProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextTelefone_ProfessorActionPerformed
+
+    private void jTextEndereco_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextEndereco_ProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextEndereco_ProfessorActionPerformed
+
+    private void jTextDisciplina_ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextDisciplina_ProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextDisciplina_ProfessorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1238,8 +1481,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton bNotaProf;
     private javax.swing.JButton bNotasAluno;
     private javax.swing.JButton bVoltarCriarExercicios;
+    private javax.swing.JButton bVoltarCriarExercicios2;
     private javax.swing.JButton bVoltarCriarExercicios3;
+    private javax.swing.JButton bVoltarCriarExercicios4;
     private javax.swing.JButton bVoltarExerciciosAluno1;
+    private javax.swing.JButton bVoltarExerciciosAluno2;
     private javax.swing.JButton bVoltarExerciciosProf;
     private javax.swing.JButton bVoltarNota;
     private javax.swing.JButton jButton2;
@@ -1272,6 +1518,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -1281,7 +1528,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1294,6 +1548,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;
@@ -1301,11 +1556,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JPasswordField jPassword_Professor;
     private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTexIdade_Professor;
     private javax.swing.JTextField jTextCPF_Professor;
     private javax.swing.JTextField jTextCod_alunos3;
-    private javax.swing.JTextField jTextEmail_Professor;
+    private javax.swing.JTextField jTextDisciplina_Professor;
+    private javax.swing.JTextField jTextEmail_Professor1;
+    private javax.swing.JTextField jTextEndereco_Professor;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField2;
@@ -1316,21 +1574,27 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextLogin_Professor;
     private javax.swing.JTextField jTextNome_Exercicios;
     private javax.swing.JTextField jTextNome_Exercicios1;
+    private javax.swing.JTextField jTextNome_Exercicios2;
     private javax.swing.JTextField jTextNome_Exercicios3;
     private javax.swing.JTextField jTextNome_Exercicios4;
+    private javax.swing.JTextField jTextNome_Exercicios5;
     private javax.swing.JTextField jTextNome_alunos;
     private javax.swing.JTextField jTextNome_alunos1;
     private javax.swing.JTextField jTextNome_alunos2;
     private javax.swing.JTextField jTextQuestao_Exercicios1;
     private javax.swing.JTextField jTextQuestao_Exercicios2;
     private javax.swing.JTextField jTextQuestao_Exercicios3;
+    private javax.swing.JTextField jTextQuestao_Exercicios4;
+    private javax.swing.JTextField jTextTelefone_Professor;
     private javax.swing.JTextField jTextTurno_Professor;
+    private javax.swing.JTextField jTextUF_Professor;
     private javax.swing.JPanel pAluno;
     private javax.swing.JPanel pCadastroAluno;
     private javax.swing.JPanel pCadastroProfessor;
     private javax.swing.JPanel pCriarExercícios;
     private javax.swing.JPanel pExercicioProfessor;
-    private javax.swing.JPanel pExercíciosAluno;
+    private javax.swing.JPanel pExerciciosAluno;
+    private javax.swing.JPanel pFazerExercicios;
     private javax.swing.JPanel pLogin;
     private javax.swing.JPanel pMenu;
     private javax.swing.JPanel pNotaAluno;
