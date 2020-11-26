@@ -469,7 +469,7 @@ public class Principal extends javax.swing.JFrame {
         pCadastroAluno.add(jPanel10);
         jPanel10.setBounds(0, 0, 610, 100);
         pCadastroAluno.add(jPasswordField2);
-        jPasswordField2.setBounds(80, 290, 80, 20);
+        jPasswordField2.setBounds(80, 290, 80, 30);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Matutino", "Vespertino", "Noturno", "Integral" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -478,7 +478,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jComboBox2);
-        jComboBox2.setBounds(80, 200, 90, 20);
+        jComboBox2.setBounds(90, 200, 90, 20);
 
         jButton2.setBackground(new java.awt.Color(0, 102, 51));
         jButton2.setText("Voltar");
@@ -497,7 +497,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel11.setText("Senha");
         pCadastroAluno.add(jLabel11);
-        jLabel11.setBounds(40, 290, 60, 14);
+        jLabel11.setBounds(30, 300, 60, 14);
 
         jTextCod_alunos3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -505,11 +505,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextCod_alunos3);
-        jTextCod_alunos3.setBounds(80, 260, 75, 20);
+        jTextCod_alunos3.setBounds(80, 260, 75, 30);
 
         jLabel12.setText("Login");
         pCadastroAluno.add(jLabel12);
-        jLabel12.setBounds(40, 260, 63, 14);
+        jLabel12.setBounds(30, 270, 63, 14);
 
         jTextNome_alunos2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -517,15 +517,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos2);
-        jTextNome_alunos2.setBounds(80, 230, 170, 20);
+        jTextNome_alunos2.setBounds(80, 230, 170, 30);
 
         jLabel13.setText("Email");
         pCadastroAluno.add(jLabel13);
-        jLabel13.setBounds(40, 230, 60, 14);
+        jLabel13.setBounds(30, 240, 60, 14);
 
         jLabel14.setText("Turno");
         pCadastroAluno.add(jLabel14);
-        jLabel14.setBounds(40, 200, 63, 14);
+        jLabel14.setBounds(30, 210, 63, 14);
 
         jTextNome_alunos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -533,15 +533,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos1);
-        jTextNome_alunos1.setBounds(90, 170, 50, 20);
+        jTextNome_alunos1.setBounds(90, 170, 50, 30);
 
         jLabel15.setText("Matricula");
         pCadastroAluno.add(jLabel15);
-        jLabel15.setBounds(30, 170, 60, 14);
+        jLabel15.setBounds(20, 180, 60, 14);
 
         jLabel16.setText("Série");
         pCadastroAluno.add(jLabel16);
-        jLabel16.setBounds(40, 140, 63, 14);
+        jLabel16.setBounds(40, 150, 63, 14);
 
         jTextNome_alunos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -549,11 +549,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroAluno.add(jTextNome_alunos);
-        jTextNome_alunos.setBounds(80, 110, 100, 20);
+        jTextNome_alunos.setBounds(80, 110, 100, 30);
 
         jLabel17.setText("Nome");
         pCadastroAluno.add(jLabel17);
-        jLabel17.setBounds(40, 110, 60, 14);
+        jLabel17.setBounds(30, 120, 60, 14);
 
         jButton6.setBackground(new java.awt.Color(0, 102, 51));
         jButton6.setText("Salvar");
@@ -573,31 +573,31 @@ public class Principal extends javax.swing.JFrame {
         jLabel18.setText("Nome");
         jLabel18.setAlignmentY(1.0F);
         pCadastroProfessor.add(jLabel18);
-        jLabel18.setBounds(20, 150, 60, 30);
+        jLabel18.setBounds(20, 160, 60, 30);
 
         jLabel19.setText("Idade");
         pCadastroProfessor.add(jLabel19);
-        jLabel19.setBounds(20, 190, 50, 14);
+        jLabel19.setBounds(20, 200, 50, 14);
 
         jLabel20.setText("CPF");
         pCadastroProfessor.add(jLabel20);
-        jLabel20.setBounds(20, 230, 50, 14);
+        jLabel20.setBounds(20, 240, 50, 14);
 
         jLabel21.setText("RG");
         pCadastroProfessor.add(jLabel21);
-        jLabel21.setBounds(20, 270, 30, 14);
+        jLabel21.setBounds(20, 280, 30, 14);
 
         jLabel22.setText("Turno");
         pCadastroProfessor.add(jLabel22);
-        jLabel22.setBounds(20, 310, 50, 14);
+        jLabel22.setBounds(20, 320, 50, 14);
 
         jLabel23.setText("Senha");
         pCadastroProfessor.add(jLabel23);
-        jLabel23.setBounds(10, 570, 60, 14);
+        jLabel23.setBounds(10, 580, 60, 14);
 
         jLabel24.setText("Login");
         pCadastroProfessor.add(jLabel24);
-        jLabel24.setBounds(10, 540, 50, 14);
+        jLabel24.setBounds(10, 550, 50, 14);
 
         jPanel12.setBackground(new java.awt.Color(0, 153, 0));
         jPanel12.setToolTipText("Teste");
@@ -621,7 +621,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(JTextNome_Professor);
-        JTextNome_Professor.setBounds(80, 160, 200, 20);
+        JTextNome_Professor.setBounds(80, 160, 200, 30);
 
         jTexIdade_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -629,7 +629,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTexIdade_Professor);
-        jTexIdade_Professor.setBounds(80, 190, 40, 20);
+        jTexIdade_Professor.setBounds(80, 190, 40, 30);
 
         jTextCPF_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -637,7 +637,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextCPF_Professor);
-        jTextCPF_Professor.setBounds(80, 230, 120, 20);
+        jTextCPF_Professor.setBounds(80, 230, 120, 30);
 
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -645,7 +645,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextField18);
-        jTextField18.setBounds(80, 270, 90, 20);
+        jTextField18.setBounds(80, 270, 90, 30);
 
         jTextTurno_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -653,7 +653,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextTurno_Professor);
-        jTextTurno_Professor.setBounds(80, 310, 30, 20);
+        jTextTurno_Professor.setBounds(80, 310, 30, 30);
 
         jTextLogin_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -661,13 +661,13 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextLogin_Professor);
-        jTextLogin_Professor.setBounds(50, 540, 130, 20);
+        jTextLogin_Professor.setBounds(50, 540, 130, 30);
 
         jLabel26.setText("DISCIPLINA");
         pCadastroProfessor.add(jLabel26);
-        jLabel26.setBounds(10, 480, 60, 20);
+        jLabel26.setBounds(10, 490, 70, 20);
         pCadastroProfessor.add(jPassword_Professor);
-        jPassword_Professor.setBounds(50, 570, 130, 20);
+        jPassword_Professor.setBounds(50, 570, 130, 30);
 
         jButton4.setBackground(new java.awt.Color(0, 102, 51));
         jButton4.setText("Salvar");
@@ -699,7 +699,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextEmail_Professor1);
-        jTextEmail_Professor1.setBounds(80, 350, 250, 20);
+        jTextEmail_Professor1.setBounds(80, 350, 250, 30);
 
         jTextUF_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -707,7 +707,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextUF_Professor);
-        jTextUF_Professor.setBounds(80, 390, 250, 20);
+        jTextUF_Professor.setBounds(80, 390, 250, 30);
 
         jTextTelefone_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -715,7 +715,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextTelefone_Professor);
-        jTextTelefone_Professor.setBounds(80, 450, 250, 20);
+        jTextTelefone_Professor.setBounds(80, 450, 250, 30);
 
         jTextEndereco_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -723,7 +723,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextEndereco_Professor);
-        jTextEndereco_Professor.setBounds(80, 420, 250, 20);
+        jTextEndereco_Professor.setBounds(80, 420, 250, 30);
 
         jTextDisciplina_Professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -731,23 +731,23 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pCadastroProfessor.add(jTextDisciplina_Professor);
-        jTextDisciplina_Professor.setBounds(80, 480, 250, 20);
+        jTextDisciplina_Professor.setBounds(80, 480, 250, 30);
 
         jLabel42.setText("E-MAIL");
         pCadastroProfessor.add(jLabel42);
-        jLabel42.setBounds(20, 350, 60, 14);
+        jLabel42.setBounds(20, 360, 60, 14);
 
         jLabel43.setText("UF");
         pCadastroProfessor.add(jLabel43);
-        jLabel43.setBounds(40, 390, 60, 20);
+        jLabel43.setBounds(30, 400, 60, 20);
 
         jLabel44.setText("ENDERECO");
         pCadastroProfessor.add(jLabel44);
-        jLabel44.setBounds(20, 420, 60, 20);
+        jLabel44.setBounds(10, 430, 70, 20);
 
         jLabel45.setText("TELEFONE");
         pCadastroProfessor.add(jLabel45);
-        jLabel45.setBounds(10, 450, 60, 20);
+        jLabel45.setBounds(10, 460, 70, 20);
 
         pMenu.add(pCadastroProfessor, "cCadastroProf");
 
@@ -1133,7 +1133,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(pMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
