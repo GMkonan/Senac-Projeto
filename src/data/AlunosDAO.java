@@ -19,6 +19,7 @@ public class AlunosDAO {
     public boolean localizar() {
         sql = "select * from tb_alunos where LOGIN_ALUNOS = ?"; //provavel ter q mudar para algo q n seja COD_ALUNOS (talvez login?)
         try {
+            bd.getConnection();
             statement = bd.connection.prepareStatement(sql);
             statement.setString(1, aluno.getLOGIN_ALUNOS());
             resultSet = statement.executeQuery();
@@ -40,6 +41,7 @@ public class AlunosDAO {
         men = "Operacão realizada com sucesso!";
         try {
             if(operacao == INCLUSAO) {
+                bd.getConnection();
                 sql = "insert into tb_alunos values (?, ?, ?, ?, ?, ?, ?, ?)";
                 statement = bd.connection.prepareStatement(sql);
                 statement.setString(1, aluno.getCOD_ALUNOS());

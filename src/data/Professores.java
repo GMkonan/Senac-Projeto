@@ -10,8 +10,8 @@ package data;
  * @author sala18a
  */
 public class Professores {
-    private String COD_PROFESSOR, NOME_PROFESSOR, IDADE_PROFESSOR, TELEFONE_PROFESSOR, ENDERECO_PROFESSOR, UF_PROFESSOR, CIDADE_PROFESOR, CPF_PROFESSOR, RG_PROFESSOR, SEXO_PROFESSOR, BAIRRO_PROFESSOR, TURNO_PROFESSOR, LOGIN_PROFESSOR, SENHA_PROFESSOR, EMAIL_PROFESSOR;
-    
+    private String COD_PROFESSOR, NOME_PROFESSOR, IDADE_PROFESSOR, TELEFONE_PROFESSOR, ENDERECO_PROFESSOR, UF_PROFESSOR, CIDADE_PROFESOR, CPF_PROFESSOR, RG_PROFESSOR, SEXO_PROFESSOR, BAIRRO_PROFESSOR, TURNO_PROFESSOR, LOGIN_PROFESSOR, SENHA_PROFESSOR, EMAIL_PROFESSOR, DISCIPLINA_PROFESSOR;
+
     public String getCOD_PROFESSOR() {
         return COD_PROFESSOR;
     }
@@ -44,12 +44,12 @@ public class Professores {
         this.TELEFONE_PROFESSOR = TELEFONE_PROFESSOR;
     }
 
-    public String getENDEREO_PROFESSOR() {
+    public String getENDERECO_PROFESSOR() {
         return ENDERECO_PROFESSOR;
     }
 
-    public void setENDEREO_PROFESSOR(String ENDEREO_PROFESSOR) {
-        this.ENDERECO_PROFESSOR = ENDEREO_PROFESSOR;
+    public void setENDERECO_PROFESSOR(String ENDERECO_PROFESSOR) {
+        this.ENDERECO_PROFESSOR = ENDERECO_PROFESSOR;
     }
 
     public String getUF_PROFESSOR() {
@@ -60,11 +60,11 @@ public class Professores {
         this.UF_PROFESSOR = UF_PROFESSOR;
     }
 
-    public String getCIDADE_PROFESOR() {
+    public String getCIDADE_PROFESSOR() {
         return CIDADE_PROFESOR;
     }
 
-    public void setCIDADE_PROFESOR(String CIDADE_PROFESOR) {
+    public void setCIDADE_PROFESSOR(String CIDADE_PROFESOR) {
         this.CIDADE_PROFESOR = CIDADE_PROFESOR;
     }
 
@@ -132,29 +132,14 @@ public class Professores {
         this.EMAIL_PROFESSOR = EMAIL_PROFESSOR;
     }
 
-    void setDISCIPLINA_PROFESSOR(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getDISCIPLINA_PROFESSOR() {
+        return DISCIPLINA_PROFESSOR;
     }
 
-    void setENDERECO_PROFESSOR(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setDISCIPLINA_PROFESSOR(String DISCIPLINA_PROFESSOR) {
+        this.DISCIPLINA_PROFESSOR = DISCIPLINA_PROFESSOR;
     }
 
-    void setCIDADE_PROFESSOR(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getDISCIPLINA_PROFESSOR() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getENDERECO_PROFESSOR() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getCIDADE_PROFESSOR() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
-}
 
+}

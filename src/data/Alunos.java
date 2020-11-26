@@ -3,132 +3,73 @@ package data;
 
 
 public class Alunos {
-    private String cod_alunos, nome_alunos, serie_alunos, matricula_alunos, turno_alunos, email_alunos, login_alunos, senha_alunos;
-    
+    private String COD_ALUNOS, NOME_ALUNOS, SERIE_ALUNOS, MATRICULA_ALUNOS, TURNO_ALUNOS, EMAIL_ALUNOS, LOGIN_ALUNOS, SENHA_ALUNOS;
+
     public String getCOD_ALUNOS() {
-        return cod_alunos;
+        return COD_ALUNOS;
     }
-    public void setCOD_ALUNOS(String cod_alunos) {
-        this.cod_alunos = cod_alunos;
+
+    public void setCOD_ALUNOS(String COD_ALUNOS) {
+        this.COD_ALUNOS = COD_ALUNOS;
     }
+
     public String getNOME_ALUNOS() {
-        return nome_alunos;
-    }
-    public void setNOME_ALUNOS(String nome_alunos) {
-        this.nome_alunos = nome_alunos;
+        return NOME_ALUNOS;
     }
 
-    public void setCod_alunos(String cod_alunos) {
-        this.cod_alunos = cod_alunos;
+    public void setNOME_ALUNOS(String NOME_ALUNOS) {
+        this.NOME_ALUNOS = NOME_ALUNOS;
     }
 
-    public void setNome_alunos(String nome_alunos) {
-        this.nome_alunos = nome_alunos;
+    public String getSERIE_ALUNOS() {
+        return SERIE_ALUNOS;
     }
 
-    public void setSerie_alunos(String serie_alunos) {
-        this.serie_alunos = serie_alunos;
+    public void setSERIE_ALUNOS(String SERIE_ALUNOS) {
+        this.SERIE_ALUNOS = SERIE_ALUNOS;
     }
 
-    public void setMatricula_alunos(String matricula_alunos) {
-        this.matricula_alunos = matricula_alunos;
+    public String getMATRICULA_ALUNOS() {
+        return MATRICULA_ALUNOS;
     }
 
-    public void setTurno_alunos(String turno_alunos) {
-        this.turno_alunos = turno_alunos;
+    public void setMATRICULA_ALUNOS(String MATRICULA_ALUNOS) {
+        this.MATRICULA_ALUNOS = MATRICULA_ALUNOS;
     }
 
-    public void setEmail_alunos(String email_alunos) {
-        this.email_alunos = email_alunos;
+    public String getTURNO_ALUNOS() {
+        return TURNO_ALUNOS;
     }
 
-    public void setLogin_alunos(String login_alunos) {
-        this.login_alunos = login_alunos;
+    public void setTURNO_ALUNOS(String TURNO_ALUNOS) {
+        this.TURNO_ALUNOS = TURNO_ALUNOS;
     }
 
-    public void setSenha_alunos(String senha_alunos) {
-        this.senha_alunos = senha_alunos;
+    public String getEMAIL_ALUNOS() {
+        return EMAIL_ALUNOS;
     }
 
-    public String getCod_alunos() {
-        return cod_alunos;
+    public void setEMAIL_ALUNOS(String EMAIL_ALUNOS) {
+        this.EMAIL_ALUNOS = EMAIL_ALUNOS;
     }
 
-    public String getNome_alunos() {
-        return nome_alunos;
+    public String getLOGIN_ALUNOS() {
+        return LOGIN_ALUNOS;
     }
 
-    public String getSerie_alunos() {
-        return serie_alunos;
+    public void setLOGIN_ALUNOS(String LOGIN_ALUNOS) {
+        this.LOGIN_ALUNOS = LOGIN_ALUNOS;
     }
 
-    public String getMatricula_alunos() {
-        return matricula_alunos;
+    public String getSENHA_ALUNOS() {
+        return SENHA_ALUNOS;
     }
 
-    public String getTurno_alunos() {
-        return turno_alunos;
+    public void setSENHA_ALUNOS(String SENHA_ALUNOS) {
+        this.SENHA_ALUNOS = SENHA_ALUNOS;
     }
 
-    public String getEmail_alunos() {
-        return email_alunos;
-    }
-
-    public String getLogin_alunos() {
-        return login_alunos;
-    }
-
-    public String getSenha_alunos() {
-        return senha_alunos;
-    }
-
-    void setSERIE_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setMATRICULA_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setTURNO_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setEMAIL_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setLOGIN_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setSENHA_ALUNOS(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getSERIE_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getMATRICULA_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getTURNO_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getEMAIL_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getLOGIN_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getSENHA_ALUNOS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
 
 }
+    

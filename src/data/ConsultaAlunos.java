@@ -28,7 +28,7 @@ public class ConsultaAlunos extends JFrame {
        public void inicalizarComponentes() {
            setLayout(null);
            setTitle("Aprendendo consultas com SQL");
-           setBounds(200, 200, 600, 500);
+           setBounds(200, 200, 1200, 720);
            setResizable(false);
            label1 = new JLabel ("Digite o comando SQL: ");
            label1.setBounds(50, 10, 200, 25);
@@ -37,7 +37,7 @@ public class ConsultaAlunos extends JFrame {
            btExecutar = new JButton("Executar");
            btExecutar.setBounds(50, 70, 100, 25);
            scrollTable = new JScrollPane();
-           scrollTable.setBounds(50, 100, 500, 300);
+           scrollTable.setBounds(50, 100, 1200, 600);
            add(scrollTable);
            add(tfSQL);
            add(btExecutar);

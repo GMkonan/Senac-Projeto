@@ -50,6 +50,7 @@ public class ProfessoresDAO {
     }
     public String atualizar(int operacao) {
         men = "Operacao realizada com sucesso!";
+        bd.getConnection();
         try {
             if (operacao == INCLUSAO) {
                 sql = "insert into tb_professores values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
